@@ -4,30 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Document</title>
 </head>   
 <body>
     <section>
         <div class="container">
             <form class="form">
-                <h1 class="form_heading">
+                <h1 class="form__heading">
                     Kim birinchi borishga
                 </h1>
                 
-                <div class="form__main-area"></div>
-                    
-                    <input class="form__input" type="text">
+                <div class="form__main-area">
+                    <div class="form__sub-area">
+                        <p class="form__desc">Masofa (km)</p>
+                        
+                        <input class="form__input" type="text">
+                        
+                        <button class="form__btn">Hisobla</button>
+                    </div>
 
-                    <select id="select">
-                        <option value="metr">METR</option>
-                        op
-                    </select>
-                    
-                    <button class="form__btn">Hisobla</button>
+                    <span class="form__alert"></span>
+
                 </div>
+                
                 
                 <ul class="form-list">
                     <li class="form-list__item">
+                        <img class="form-list__img" src="./images/icon-walk.jpg" alt="Velosiped" width="150" height="150">
                         <h2 class="form-list__item__heading">
                             Piyoda
                         </h2>
@@ -35,6 +39,8 @@
                     </li>
                     
                     <li class="form-list__item">
+                        <img class="form-list__img" src="./images/icon-velo.png" alt="Velosiped" width="150" height="150">
+
                         <h2 class="form-list__item__heading">
                             Velosiped
                         </h2>
@@ -42,6 +48,8 @@
                     </li>
                     
                     <li class="form-list__item">
+                        <img class="form-list__img" src="./images/icon-car.jpg" alt="Velosiped" width="150" height="150">
+
                         <h2 class="form-list__item__heading">
                             Avtomobil
                         </h2>
@@ -49,15 +57,18 @@
                     </li>
                     
                     <li class="form-list__item">
+                        <img class="form-list__img" src="./images/icon-airplane.png" alt="Velosiped" width="150" height="150">
+
                         <h2 class="form-list__item__heading">
                             Samolyot
                         </h2>
                         <span class="cal-air form-list__item__area"></span>
                     </li>
                 </ul>
-            </form>
-        </div>
-    </section>
-    <script src="./js/main.js"></script>
+            </div>
+        </form>
+    </div>
+</section>
+<script src="./js/main.js"></script>
 </body>
 </html>
