@@ -39,6 +39,7 @@ function checkResult(evt){
     } else if (isNaN(userNumber)) {
         elFormAlert.textContent = 'Iltimos, raqam kiriting!';
         elFormAlert.classList.add('form__alert-design');
+        elInput.value = null;
         return;
     } else {
         elFormAlert.textContent = null;
